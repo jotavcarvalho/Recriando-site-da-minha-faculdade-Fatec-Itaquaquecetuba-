@@ -1,0 +1,448 @@
+    @import url('https://fonts.googleapis.com/css2?family= Lato: wght @400;700 & display=swap');
+
+    /* zerando o CSS*/
+
+    * {
+
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+    body,
+    html {
+        font-family: 'Lato', sans-serif;
+        overflow-x: hidden;
+    }
+
+    /*Navbar*/
+
+    ul {
+        list-style: none;
+    }
+
+    .navbar {
+        position: absolute;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 20px;
+        color: black;
+        text-transform: uppercase;
+
+    }
+
+    .navbar .logo {
+        cursor: pointer;
+        width: 75px;
+        height: 75px;
+
+    }
+
+    /*.navbar .logo:hover{
+        filter:drop-shadow(0 0 1rem rgb(26, 26, 151));
+    }*/
+
+    .nav-links {
+        display: flex;
+        align-items: center;
+
+    }
+
+
+    .nav-links li {
+        margin: 0 30px;
+        cursor: pointer;
+        position: relative;
+    }
+
+
+    .nav-links li a:before {
+        content: ' ';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0px;
+        height: 4px;
+        background-color: rgb(48, 48, 47);
+        transition: all 1s ease;
+        border-radius: 20px;
+    }
+
+    .nav-links li a:hover:before {
+        width: 100%;
+    }
+
+    .nav-links a {
+        color: red;
+        text-decoration: none;
+        font-size: 3vmin;
+        transform: 2ms ease-in;
+        position: relative;
+    }
+
+    .nav-links a:hover {
+        color: gray;
+    }
+
+
+    a {
+        text-decoration: none;
+    }
+
+    .sub-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #d2d0d0;
+        min-width: 160px;
+
+    }
+
+    .sub-menu ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    .sub-menu li a {
+        display: block;
+        padding: 12px 16px;
+        color: #000;
+        text-decoration: none;
+    }
+
+    .sub-menu li a:hover {
+        background-color: #f1f1f1;
+    }
+
+    .nav-links li:hover>.sub-menu {
+        display: block;
+    }
+
+    /* header agora*/
+
+    header {
+        width: 100vw;
+        height: 100vh;
+        background-image: url(background4.png);
+        background-position: bottom;
+        background-size: cover;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+
+
+    .header-content {
+        margin-bottom: 150px;
+        color: black;
+        text-align: center;
+    }
+
+    .line {
+        width: 150px;
+        height: 4px;
+        background-color: red;
+        margin: 10px auto;
+        border-radius: 5px;
+    }
+
+    .header-content h1 {
+        font-size: 7vmin;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .header-content img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .ctn {
+        padding: 8px 15px;
+        background: beige;
+        border-radius: 30px;
+        color: red;
+        font-size: 3vmin;
+    }
+
+    .menu-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 40px;
+        cursor: pointer;
+        display: none;
+    }
+
+    /* Section Cursos*/
+
+    section {
+        width: 100%;
+        margin: 80px 0;
+
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .line2 {
+        width: 50px;
+        height: 4px;
+        background-color: red;
+        border-radius: 5px;
+        right: 5px;
+    }
+
+    .linha {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .linha .coluna img {
+        width: 80%;
+    }
+
+    .linha .coluna {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cursos .linha {
+        margin-top: 5rem;
+    }
+
+    .linha .coluna h4 {
+        color: black;
+        font-size: 3vmin;
+        margin: 1.8rem auto;
+    }
+
+    .linha .coluna p {
+        color: black;
+        padding: 0 3.5rem;
+    }
+
+    .cursos .ctn {
+        margin-top: 1.8rem;
+
+    }
+
+    /*section noticias*/
+
+    .news {
+        margin: 80px 0;
+        background-image: url(background2.png);
+        width: 100%;
+    }
+
+    .news-content {
+        width: 100%;
+        padding: 80px;
+    }
+
+    .card .card1 {
+        background-image: url('https://capaobonito.sp.gov.br/wp-content/uploads/2023/03/336368594_891693732097139_7462880001834328200_n.jpg');
+    }
+
+    .card .card2 {
+        background-image: url(ciclopalestras.png);
+    }
+
+    .card .card3 {
+        background-image: url(calendario.jpg);
+    }
+
+    .card-container {
+        display: flex;
+        width: 90%;
+        min-height: 100vh;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        gap: 20px;
+    }
+
+    .card1,
+    .card2,
+    .card3 {
+        width: 300px;
+        height: 300px;
+        border-radius: 15px;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+
+    .card-content {
+        position: absolute;
+        left: 0;
+        padding: 25px;
+    }
+
+   .manchete {
+        font-size: 1rem;
+        color: black;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+
+    .titulo {
+        font-size: 1.8rem;
+        text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+    }
+    .card:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    }   
+    
+    .card-container:hover > .card:not(:hover) {
+        filter: brightness(0.5) blur(10px);
+    }
+    
+    .card-container:hover > .card:nth-of-type(1):not(:hover),
+    .card-container:hover > .card:nth-of-type(3):not(:hover) {
+        filter: brightness(0.5) blur(10px);
+    }
+
+    footer {
+        width: 100%;
+        min-height: 250px;
+    }
+
+    .footer-content {
+        background-color: rgb(197, 34, 34);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer .informations {
+        width: 320px;
+        min-height: 150px;
+        padding: 20px;
+    }
+
+    .informations h3 {
+        color: rgb(165, 161, 161);
+        margin-top: 20px;
+    }
+
+    .informations li {
+        margin: 1.5rem auto;
+    }
+
+    .topics a {
+        color: white;
+    }
+
+    .footer-copy {
+        color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(156, 26, 26);
+    }
+
+    /*Mobile - Responsividade*/
+    @media only screen and (max-width:850px) {
+        .menu-btn {
+            display: block;
+        }
+
+        .navbar {
+            padding: 0;
+        }
+
+        .logo {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+        }
+
+        .nav-links {
+            flex-direction: column;
+            width: 100%;
+            height: 100vh;
+            justify-content: center;
+            background: beige;
+            margin-top: -900px;
+            transition: all 0.5s ease;
+        }
+
+        .mobile-menu {
+            margin-top: 0px;
+            border-bottom-right-radius: 30%;
+        }
+
+        .nav-links li {
+            margin: 30px auto;
+        }
+
+
+        .linha {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .linha .coluna img {
+            width: 80%;
+        }
+
+        .linha .coluna {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .linha .coluna h4 {
+            color: black;
+            font-size: 3.5vmin;
+            margin: 1.8rem auto;
+        }
+    
+        .linha .coluna p {
+            color: black;
+            padding: 0 3rem;
+        }
+
+        .card-container {
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            width: 80%;
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            gap: 20px;
+        }
+    
+        .card1,
+        .card2,
+        .card3,
+        .card4 {
+           
+            width: 240px;
+            height: 240px;
+            border-radius: 15px;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+
+
+        .footer-content {
+            grid-template-columns: repeat(2,1fr);
+            gap: 1.3rem;
+        }
+
+    }

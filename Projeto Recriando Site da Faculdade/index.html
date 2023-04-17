@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="fatec.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Fatec</title>
+    <!-- Estilização da Calculadora de Faltas -->
+	<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        table td, table th {
+            padding: 10px;
+            border: 1px solid black;
+        }
+        input[type="number"] {
+            text-align: center;
+            width: 50px;
+        }
+
+        button {
+            background: #ff0000;
+            border: none;
+            border-radius: 20px;
+            color: #fff;
+            padding: 12px 24px;
+            font-size: 20px;
+            cursor: pointer;
+            border: 2px solid #222;
+            text-shadow: 1px 1px #222;
+            box-shadow: 2px 2px 4px #888;
+            transition: all 0.2s ease-in-out;
+        }
+
+        button:hover {
+            background: #ff0000;
+            color: #fff;
+            border: 2px solid #222;
+            text-shadow: none;
+            box-shadow: 4px 4px 8px #888;
+            transform: scale(1.05);
+        }
+
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        th {
+            background-color: #ff0000;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #ffe6e6;
+        }
+
+        td {
+            background-color: #fff;
+        }
+
+        input[type="number"] {
+        text-align: center;
+        width: 50px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        transition: all 0.2s ease-in-out;
+        }
+
+        input[type="number"]:hover {
+        border-color: #aaa;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        input[type="number"]:focus {
+        outline: none;
+        border-color: #00f;
+        box-shadow: 2px 2px 5px rgba(0, 0, 255, 0.5);
+        }
+	</style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Meu_projeto (1).png" alt="Logo Fatec">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#"> Institucional</a>
+        
+                    <ul class="sub-menu">
+                        <li><a href="#">PDI</a></li>
+                        <li><a href="#">CPA</a></li>
+                        <li><a href="#">A Cidade de Itaqua</a></li>
+                        <li><a href="#">Corpo Docente</a></li>
+                        <li><a href="#">Corpo Administrativo</a></li>
+                        <li><a href="#">Biblioteca</a></li>
+                        <li><a href="#">Centro Paula Souza</a></li>
+                    </ul> 
+                
+            </li>
+            <li><a href="#"> Aluno</a>
+        
+                   <ul class="sub-menu">
+                        <li><a href="#">Siga Aluno</a></li>
+                        <li><a href="#">AACC</a></li>
+                        <li><a href="#">Estágio</a></li>
+                        <li><a href="#">Enade</a></li>
+                        <li><a href="#">Feteps</a></li>
+                        <li><a href="#">Email Institucional</a></li>
+                        <li><a href="#">Microsoft Imagine</a></li>
+                    </ul>
+                
+            </li>
+            <li><a href="#"> Diretoria Administrativa</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Recadastramento Anual dos Servidores</a></li>
+                        <li><a href="#">SIG - Sistema Integrado de Gestão</a></li>
+                    </ul>
+            </li>
+            <li><a href="#"> Diretoria Acadêmica</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Calendário Acadêmico</a></li>
+                        <li><a href="#">Biblioteca</a></li>
+                        <li><a href="#">Siga Professor</a></li>
+                    </ul>
+                </div> 
+            </li>
+            <li><a href="#"> Vestibular</a></li>
+        </ul>
+        <img src="menus.png" alt="botão menu" class="menu-btn">
+    </nav>
+    <header>
+        <div class="header-content">
+            <img src="principal2.png" alt="">
+            <div class="line"></div>
+            <h1>Lorem, ipsum dolor.</h1>
+        </div>
+    </header>
+
+    <section class="cursos">
+        <div class="title">
+            <h1><a name="cursos">CURSOS</a></h1>
+        </div>
+        <div class="line"></div>
+        <div class="linha">
+            <div class="coluna">
+                <img src="gti.png" alt="Gestão da TI">
+                <h4>Gestão da TI</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, consequuntur?</p>
+                <a href="#" class="ctn">Saiba Mais</a>
+            </div>
+            <div class="coluna">
+                <img src="gcom.png" alt="Gestão Comercial">
+                <h4>Gestão Comercial</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, consequuntur?</p>
+                <a href="#" class="ctn">Saiba Mais</a>
+            </div>
+            <div class="coluna">
+                <img src="secretariado.png" alt="Secretariado">
+                <h4>Secretariado</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, consequuntur?</p>
+                <a href="#" class="ctn">Saiba Mais</a>
+            </div>
+        </div>
+    </section>
+    <section class="news">
+        <div class="news-content">
+            <div class="title">
+                <h1>DESTAQUES</h1>
+            </div>
+            <div class="line"></div>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card1">
+                        <div class="card-content">
+                            <!-- <p class="manchete">Notícias</p> 
+                            <h3 class="titulo">Lorem, ipsum.</h3> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card2">
+                        <div class="card-content">
+                           <!-- <p class="manchete">Notícias</p> 
+                            <h3 class="titulo">Lorem, ipsum.</h3> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card3">
+                        <div class="card-content">
+                            <!-- <p class="manchete">Notícias</p>
+                            <h3 class="titulo">Lorem, ipsum.</h3> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="calculator">
+        <div class="title">
+            <h1>CALCULADORA DE FALTAS</h1> <!-- Calculadora de Faltas -->
+            <div class="line"></div><br><br><br>    
+        </div>
+        <table>
+            <tr>
+                <th>Dia da Semana</th>
+                <th>Disciplina</th>
+                <th>Faltas Acumuladas</th>
+                <th>Faltas Restantes</th>
+                <th>Faltas no Dia</th>
+            </tr>
+            <tr>
+                <td>Segunda-feira</td>
+                <td>Programação para Internet</td>
+                <td><input type="number" id="faltas-programacao" value="0" min="0" max="20" readonly></td>
+                <td><input type="number" id="restante-programacao" value="20" min="0" max="20" readonly></td>
+                <td><input type="number" id="faltas-dia-programacao" value="0" min="0" max="4"></td>
+            </tr>
+            <tr>
+                <td>Terça-feira</td>
+                <td>Redes de Computadores</td>
+                <td><input type="number" id="faltas-redes" value="0" min="0" max="20" readonly></td>
+                <td><input type="number" id="restante-redes" value="20" min="0" max="20" readonly></td>
+                <td><input type="number" id="faltas-dia-redes" value="0" min="0" max="4"></td>
+            </tr>
+            <tr>
+                <td rowspan="2">Quarta-feira</td>
+                <td>Inglês</td>
+                <td><input type="number" id="faltas-ingles" value="0" min="0" max="20" readonly></td>
+                <td><input type="number" id="restante-ingles" value="20" min="0" max="20" readonly></td>
+                <td><input type="number" id="faltas-dia-ingles" value="0" min="0" max="2"></td>
+            </tr>
+            <tr>
+    
+                <td>Marketing</td>
+                <td><input type="number" id="faltas-marketing" value="0" min="0" max="20" readonly></td>
+                <td><input type="number" id="restante-marketing" value="20" min="0" max="20" readonly></td>
+                <td><input type="number" id="faltas-dia-marketing" value="0" min="0" max="2"></td>
+                </tr>
+                <tr>
+                <td>Quinta-feira</td>
+                <td>Gestão Financeira</td>
+                <td><input type="number" id="faltas-financeira" value="0" min="0" max="20" readonly></td>
+                <td><input type="number" id="restante-financeira" value="20" min="0" max="20" readonly></td>
+                <td><input type="number" id="faltas-dia-financeira" value="0" min="0" max="4"></td>
+                </tr>
+                <tr>
+                <td>Sexta-feira</td>
+                <td>Gestão da Produção</td>
+                <td><input type="number" id="faltas-producao" value="0" min="0" max="20" readonly></td>
+                <td><input type="number" id="restante-producao" value="20" min="0" max="20" readonly></td>
+                <td><input type="number" id="faltas-dia-producao" value="0" min="0" max="4"></td>
+                </tr>
+        </table>
+            <br><br><br>
+            <center><button onclick="calcularFaltas()">Calcular Faltas</button></center>
+            <br><br><br>
+            <div id="resultado"></div>
+    
+        <script>
+            function calcularFaltas() {
+    
+            // Obter valores de faltas acumuladas e faltas no dia para cada disciplina
+            let faltasProgramacao = parseInt(document.getElementById("faltas-programacao").value);
+            let faltasRedes = parseInt(document.getElementById("faltas-redes").value);
+            let faltasIngles = parseInt(document.getElementById("faltas-ingles").value);
+            let faltasMarketing = parseInt(document.getElementById("faltas-marketing").value);
+            let faltasFinanceira = parseInt(document.getElementById("faltas-financeira").value);
+            let faltasProducao = parseInt(document.getElementById("faltas-producao").value);
+            let faltasDiaProgramacao = parseInt(document.getElementById("faltas-dia-programacao").value);
+            let faltasDiaRedes = parseInt(document.getElementById("faltas-dia-redes").value);
+            let faltasDiaIngles = parseInt(document.getElementById("faltas-dia-ingles").value);
+            let faltasDiaMarketing = parseInt(document.getElementById("faltas-dia-marketing").value);
+            let faltasDiaFinanceira = parseInt(document.getElementById("faltas-dia-financeira").value);
+            let faltasDiaProducao = parseInt(document.getElementById("faltas-dia-producao").value);
+                
+            // Calcular faltas acumuladas após a falta do dia para cada disciplina
+            faltasProgramacao += faltasDiaProgramacao;
+            faltasRedes += faltasDiaRedes;
+            faltasIngles += faltasDiaIngles;
+            faltasMarketing += faltasDiaMarketing;
+            faltasFinanceira += faltasDiaFinanceira;
+            faltasProducao += faltasDiaProducao;
+    
+            // Verificar se as faltas ultrapassam o limite máximo de 20
+            if (faltasProgramacao > 20 || faltasRedes > 20 || faltasIngles > 20 || faltasMarketing > 20 || faltasFinanceira > 20 || faltasProducao > 20) {
+            document.getElementById("resultado").innerHTML = "Limite máximo de faltas ultrapassado!";
+            return;
+            }
+    
+            // Calcular faltas restantes para cada disciplina
+            let restanteProgramacao = 20 - faltasProgramacao;
+            let restanteRedes = 20 - faltasRedes;
+            let restanteIngles = 20 - faltasIngles;
+            let restanteMarketing = 20 - faltasMarketing;
+            let restanteFinanceira = 20 - faltasFinanceira;
+            let restanteProducao = 20 - faltasProducao;
+    
+            // Exibir resultado
+            let resultado = "Faltas acumuladas:<br>";
+            resultado += "Programação para Internet: " + faltasProgramacao + "<br>";
+            resultado += "Redes de Computadores: " + faltasRedes + "<br>";
+            resultado += "Inglês: " + faltasIngles + "<br>";
+            resultado += "Marketing: " + faltasMarketing + "<br>";
+            resultado += "Gestão Financeira: " + faltasFinanceira + "<br>";
+            resultado += "Gestão da Produção: " + faltasProducao + "<br><br>";
+            resultado += "Faltas restantes:<br>";
+            resultado += "Programação para Internet: " + restanteProgramacao + " (pode faltar " + (restanteProgramacao / 4) + " dia(s)<br>";
+            resultado += "Redes de Computadores: " + restanteRedes + " (pode faltar " + (restanteRedes / 4) + " dia(s)<br>";
+            resultado += "Inglês: " + restanteIngles + " (pode faltar " + (restanteIngles / 2) + " dia(s)<br>";
+            resultado += "Marketing: " + restanteMarketing + " (pode faltar " + (restanteMarketing / 2) + " dia(s)<br>";
+            resultado += "Gestão Financeira: " + restanteFinanceira + " (pode faltar " + (restanteFinanceira / 4) + " dia(s)<br>";
+            resultado += "Gestão da Produção: " + restanteProducao + " (pode faltar " + (restanteProducao / 4) + " dia(s)<br>";
+            document.getElementById("resultado").innerHTML = resultado;
+        }
+        </script>    
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="informations">
+                <h3>Cursos</h3>
+                <ul class="topics">
+                    <li><a href="#">Gestão da TI</a></li>
+                    <li><a href="#">Gestão Comercial</a></li>
+                    <li><a href="#">Secretariado</a></li>
+                </ul>
+            </div>
+            <div class="informations">
+                <h3>Informações</h3>
+                <ul class="topics">
+                    <li><a href="#">Notícias</a></li>
+                    <li><a href="#">Parcerias</a></li>
+                    <li><a href="#">Links úteis</a></li>
+                </ul>
+            </div>
+            <div class="informations">
+                <h3>Calendários</h3>
+                <ul class="topics">
+                    <li><a href="#">Vestibular</a></li>
+                    <li><a href="#">Semestre</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <p>&copy;2023. Desenvolvido por <span>João e Nicolas</span></p>
+        </div>
+    </footer>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navlinks = document.querySelector('.nav-links');
+
+        menuBtn.addEventListener('click', () => {
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+
+</html>
